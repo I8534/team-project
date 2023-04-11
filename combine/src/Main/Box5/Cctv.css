@@ -1,0 +1,53 @@
+.Cctv-mainbox{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.Cctv-mainbox > div {
+    padding: 30px;
+}
+.Cctv-p1{
+    width: 120px;
+    height: 30px;
+    font-size: 13px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;         
+    background-color: #ebf6fc;
+    border-radius: 30px;
+}
+
+.Cctv-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    border: 3px solid #ebf6fc;
+    border-radius: 15px;
+    width: 370px;
+    height: 100px;
+}
+
+.Cctv-box3 {
+    display : flex ;
+    justify-content : center ;
+    margin : '';
+    border-bottom : 3px solid #ebf6fc ;
+}
+
+.Cctv-box3 > span {
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.Cctv-box4 {
+    display : flex ;
+    justify-content : center ;
+    margin : '';
+}
+
+.Cctv-box4 > span {
+    margin: 0 auto;
+    margin-top: 15px;
+}

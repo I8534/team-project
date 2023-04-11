@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+.Box2-wrapper {
+    padding: 150px 0;
+    font-family: 'Pretendard-Regular';
+}
+
+.Box2-bgImg {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    width: 75%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/public/img/대전야경3.png');
+    margin: 0 auto;
+    position: relative;
+}
+
+.Box2-text-wrapper {
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.Box2-text-list h1 {
+    padding: 10px 0 15px 0;
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.daejeon-target {
+    margin-bottom: 20px;
+}
+
+.Box2-text-list span {
+    margin-right: 20px;
+}
+
+.Box2-text-list button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 5px 10px;
+    color: #fff;
+    margin-bottom: 100px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.Box2-text-list button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.Box2-text-list-2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.Box2-text-list-2 p:last-child {
+    margin-top: 10px;
+}
+
+.Box2-text-list-2 p:last-child span {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+.mayor-img-box {
+    position: absolute;
+    top: 52%;
+    left: 20%;
+}
+
+.mayorBox-wrapper {
+    position: absolute;
+    top: 25%;
+    right: 8%;
+}
+
+.mayorBox-wrapper:first-child {
+    right: 31%;
+}
+
+.mayorBox-wrapper:last-child{
+    top: 55%;
+}
+
+.mayor-box {
+    width: 200px;
+    height: 120px;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.mayor-box:hover {
+    background-color: #ececec;
+}
+
+.mayor-box:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px solid rgb(92, 158, 227);
+    animation: clippath 3s infinite linear;
+}
+
+@keyframes clippath {
+
+    0%,
+    100% {
+        clip-path: inset(0 0 95% 0);
+    }
+
+    25% {
+        clip-path: inset(0 95% 0 0);
+    }
+
+    50% {
+        clip-path: inset(95% 0 0 0);
+    }
+
+    75% {
+        clip-path: inset(0 0 0 95%);
+    }
+}
+
+.mayor-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mayor-list p {
+    color: #666;
+    font-size: 14px;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+
+.mayor-arrow {
+    position: absolute;
+    top: 63%;
+    left: 15%;
+}
+
+.mayor-titleimg {
+    position: absolute;
+    top: 45%;
+    right: 15%;
+}

@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'georgia';
+  src: url('/public/fonts/georgia.woff');
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.Covid-frontBox {
+  width: calc(100%);
+  background-color: #f7f7f7;
+  margin-top: 100px;
+  padding: 20px;
+  position: relative;
+}
+
+.Covid-timeNow {
+  font-family: 'Pretendard-Regular';
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.Covid-timeNow {
+  width: calc(100%);
+  display: flex;
+  justify-content: right;
+  padding-right: 150px;
+}
+
+.Covid-countBox {
+  /* width: 800px; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* justify-content: space-between;
+  align-items: center; */
+  margin: 0 auto;
+  padding: 0 15% 50px;
+  /* padding: 0 20px 50px; */
+  text-align: center;
+}
+
+
+.Covid-about .number {
+  font-size: 60px;
+  font-family: 'georgia';
+  color: #414141;
+}
+
+.Covid-Nationwide,
+.Covid-Daejeon {
+  margin-bottom: 20px;
+  font-family: 'Pretendard-Regular';
+  font-weight: 700;
+  color: rgb(114, 114, 114);
+}
+
+.Covid-letter {
+  margin-top: 20px;
+  font-family: 'Pretendard-Regular';
+  font-weight: 700;
+}
