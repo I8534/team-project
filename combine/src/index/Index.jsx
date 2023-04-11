@@ -5,7 +5,6 @@ import Mainpage from '../Main/Mainpage'
 import { Link } from 'react-router-dom';
 
 
-
 const Index = () => {
 
     return (
@@ -17,7 +16,8 @@ const Index = () => {
                     <h1><span className='big-black-strong'>"지역의 <span className='point-red'>힘</span>으로 직접 주도"</span>하는<span className='last-big-black-strong'>대전의 미래</span></h1>
                 </div>
                 <div className='index-Box'>
-                    <div className='index-BoxList' on>
+                    <div className='index-BoxList'>
+
                      <Link to="/Mainpage">    
                         <div className="index-Boxtem">
                             <div className="index-bottom-imgbox"><img style={{ width: 150 }} src="./일류경제도시 슬로건-01.png" alt="" /></div>
@@ -25,6 +25,7 @@ const Index = () => {
                             <p>대전시 대표포털</p>
                         </div>
                      </Link>
+
                     </div>
                     <div className='index-BoxList'>
                         <div className="index-Boxtem">
@@ -53,7 +54,7 @@ const Index = () => {
             </div>
 
             <Routes>
-               <Route path="./Mainpage" element={<Mainpage/>}></Route>
+               <Route path="/Mainpage" element={<Mainpage/>}></Route>
             </Routes>
         </div>
     )

@@ -8,10 +8,6 @@ import { animated } from '@react-spring/web'
 import { BrowserRouter, useNavigate } from 'react-router-dom';
 
 
-
-
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
