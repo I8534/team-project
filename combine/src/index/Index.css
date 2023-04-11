@@ -29,7 +29,7 @@
     height: 100vh;
     position: relative;
     display: grid;
-    grid-template-columns:  auto;
+    grid-template-columns: auto;
     grid-template-rows: 3fr;
 }
 
@@ -127,7 +127,7 @@
 .index-Box {
     display: flex;
     justify-content: space-between;
-    margin:0 auto;
+    margin: 0 auto;
     text-align: center;
     margin-top: 80px;
     animation: fadein 3s;
@@ -137,6 +137,7 @@
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -160,7 +161,7 @@
     margin-top: -12px;
 }
 
-.index-BoxList:last-child{
+.index-BoxList:last-child {
     margin-right: 0;
 }
 
@@ -195,7 +196,7 @@
     font-family: 'GmarketSansMedium';
 }
 
-.index-footer{
+.index-footer {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -219,4 +220,3 @@
 .index-footer span {
     margin-right: 5px;
 }
-
