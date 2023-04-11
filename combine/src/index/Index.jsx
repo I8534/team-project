@@ -1,6 +1,6 @@
 import React from 'react'
 import './Index.css'
-import { Router, Routes ,Route, useNavigate, Outlet } from 'react-router-dom'
+import { Routes ,Route, useNavigate, Outlet } from 'react-router-dom'
 import Mainpage from '../Main/Mainpage'
 import { Link } from 'react-router-dom';
 
@@ -52,10 +52,6 @@ const Index = () => {
                 <p className='index-footer-call'><span>민원상담콜센터 042-120</span> 평일 08:00~21:00  토·공휴일 09:00~18:00</p>
                 <p>(c) DAEJEON METROPOLITAN CITY. ALL RIGHTS RESERVED.</p>
             </div>
-
-            <Routes>
-               <Route path="/Mainpage" element={<Mainpage/>}></Route>
-            </Routes>
         </div>
     )
 }

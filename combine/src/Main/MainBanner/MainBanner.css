@@ -1,0 +1,607 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '안단테';
+  src: url('../public/fonts/안단테.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'AnyConv';
+  src: url('../public/fonts/AnyConv.com__andante.woff') format('woff');
+}
+
+/* ----------------------------------- */
+/* MainBanner */
+
+.global-header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./MainBanner/expro-bridge-night-daejeon-korea.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.gnb {
+  width: 100%;
+  height: 85px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.logoImg {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 70px;
+  animation: logoImg 3s linear infinite;
+  margin-left: 60px;
+}
+
+@keyframes logoImg {
+
+  0%,
+  100% {
+      opacity: 0.3;
+  }
+
+  50% {
+      opacity: 1;
+  }
+}
+
+.gnb-main-list {
+  display: flex;
+  margin-right: 50px;
+}
+
+.gnb-main-item {
+  position: relative;
+}
+
+.gnb-main-item a {
+  display: block;
+  height: 55px;
+  padding: 0 10px;
+  line-height: 55px;
+  text-align: center;
+  color: #666;
+  font-family: 'Pretendard-Regular';
+}
+
+.gnb-main-item a:hover {
+  color: #000;
+}
+
+.gnb-main-item a.active {
+  color: #0167c7;
+}
+
+.gnb-main-item>a:first-child {
+  color: #fff;
+  font-family: '안단테';
+  margin-right: 25px;
+}
+
+.gnb-main-item>a:first-child:hover {
+  color: rgb(255, 255, 113);
+}
+
+.gnb-main-item>a:first-child:active {
+  color: rgb(255, 255, 113);
+}
+
+
+.sub {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 38%;
+  transform: translateX(-50%);
+  display: none;
+  z-index: 100;
+}
+
+.sub:before {
+  /* 가상은 content가 빈칸이라도 꼭 넣어줘야 함, 지금은 text가 아닌 네모난 박스이기에 비워둠 */
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #113676;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sub li:hover {
+  background-color: rgb(230, 229, 229);
+}
+
+.sub li a {
+  font-size: 15px;
+}
+
+.btn-box {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+  color: #fff;
+  font-size: 14px;
+  font-family: '안단테';
+  cursor: pointer;
+}
+
+
+.login {
+  margin-right: 20px;
+  background-color: #fff;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.join {
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.login:active {
+  opacity: 0.7;
+}
+
+.join:active {
+  background-color: #000000;
+  opacity: 0.7;
+}
+
+.frontBox {
+  position: relative;
+}
+
+.frontText {
+  font-size: 28px;
+  color: #fff;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  font-family: 'AnyConv';
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.koreaCenter {
+  margin-bottom: 15px;
+}
+
+.searchWrapper {
+  position: absolute;
+  top: 400px;
+  left: 200px;
+}
+
+.count__number {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.searchBox {
+  width: 350px;
+  padding: 8px 10px;
+  border: 1px solid #ffffff;
+  border-radius: 18px;
+}
+
+.searchBox input {
+  width: 280px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 15px;
+}
+
+.searchImg {
+  width: 22px;
+  position: absolute;
+  top: 12px;
+  left: 300px;
+}
+
+.tagWrapper {
+  width: calc(100%);
+  height: 30px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.tagBox {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  position: relative;
+  height: auto;
+  animation: tagBox_frames 20s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.tagBox span {
+  margin-right: 8px;
+  line-height: 30px;
+}
+
+.tagBox span:first-child {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.tagBox span:last-child {
+  background-color: #434d6b;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+
+
+@keyframes tagBox_frames {
+  from {
+      transform: translate3d(0, 10px, 0);
+  }
+
+  to {
+      transform: translate3d(0, -280px, 0);
+  }
+}
+
+
+.scrollAction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50% -50%);
+}
+
+.scrollText {
+  font-family: '안단테';
+  text-shadow: 0 0 10px #fff;
+}
+
+.scrollBox {
+  width: 30px;
+  height: 60px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 7px #fff;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrollBall {
+  width: 10px;
+  height: 10px;
+  margin-top: -20px;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: scrollBall_frames 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  box-shadow: 0 0 5px #fff;
+}
+
+@keyframes scrollBall_frames {
+  from {
+      transform: translate3d(0, 0, 0);
+  }
+
+  to {
+      transform: translate3d(0, 20px, 0);
+  }
+}
+
+/* ----------------------------------- */
+/* 날씨 */
+
+.daejeon-weatherBox {
+  background-color: #fff;
+  opacity: 0.8;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  padding: 40px;
+  font-family: 'Pretendard-Regular';
+}
+
+.weatherBox {
+  margin-bottom: 20px;
+}
+
+.weatherBox,
+.daejeon-dustBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-Img {
+  width: 30px;
+}
+
+.temp,
+.weath-condition {
+  margin-left: 5px;
+  font-weight: 700;
+}
+
+.minimum-temperature,
+.daejeon-Dust-text,
+.daejeon-UltraDust-text {
+  margin-left: 20px;
+}
+
+.minimum-temperature {
+  margin-right: 10px;
+}
+
+.highest-temperature {
+  margin-left: 10px;
+}
+
+.dust-Img,
+.ultraDust-Img {
+  width: 45px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.ultraDustText {
+  margin-left: 10px;
+}
+
+.ultraDustText::before {
+  content: "|";
+  margin-right: 10px;
+  color: #a5a5a5;
+}
+
+.weather-img-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.weather-arrow {
+  width: 25px;
+  height: 25px;
+  z-index: 3;
+}
+
+.weather-menu-box {
+  width: 400px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  /* overflow: hidden; */
+  z-index: 2;
+}
+
+
+/* ----------------------------------- */
+/* FooterBanner */
+
+.fooerbannerBox {
+  width: calc(100%);
+  background-color: #ececec;
+  padding: 20px;
+}
+
+.bannerImg {
+  width: calc(100% - 50%);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.bannerImg img {
+  margin-right: 15px;
+}
+
+.bannerImg img:last-child {
+  margin-right: 0;
+}
+
+.swiper-button-next {
+  background: url(../public/icon/blue-btn-right.png) no-repeat;
+  background-size: 20px;
+  background-position: center;
+  margin-right: 300px;
+}
+
+.swiper-button-prev {
+  background: url(../public/icon/blue-btn-left.png) no-repeat;
+  background-size: 20px;
+  background-position: center;
+  margin-left: 300px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+/* ----------------------------------- */
+/* Bottom */
+
+.footerTop {
+  display: grid;
+  grid-template-columns: 60fr auto;
+  grid-template-rows: 1fr auto;
+  width: calc(100%);
+  background-color: #3a3a3a;
+  padding: 20px 0;
+}
+
+.footer-MenuSiteBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+.partMain a,
+.MenuList a {
+  color: #ededed;
+}
+
+.partMain a:hover,
+.MenuList a:hover {
+  text-decoration: underline;
+}
+
+.MenuList li {
+  font-size: 14px;
+  float: left;
+}
+
+.MenuList li::after {
+  content: '|';
+  float: right;
+  color: #ededed;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.MenuList li:last-child::after {
+  content: "";
+}
+
+.MenuList .pointer {
+  color: yellow;
+}
+
+.drawer-container {
+  min-width: 150px;
+  position: relative;
+  padding: 0 10px;
+  font-family: 'Pretendard-Regular';
+}
+
+#dropdown {
+  left: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.dropdownLabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Pretendard-Regular';
+  font-weight: normal;
+}
+
+.dropdownLabel div {
+  color: #fff;
+  margin-right: 20px;
+}
+
+.drawer-menu-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 39px;
+  left: 0;
+  z-index: 2;
+  padding: 5px 30px 5px 10px;
+  background: #fff;
+  box-shadow: 0 0 3px #c7c7c7;
+}
+
+#dropdown:checked+label+div {
+  display: block;
+}
+
+.fontawesone-down {
+  transition: transform 100ms ease-out;
+  color: #ffffff;
+}
+
+#dropdown:checked+label>.fontawesone-down {
+  transform: rotate(-180deg);
+}
+
+.drawer-menu-list > li > a  {
+  font-weight: 400;
+  font-size: 14px;
+  color: #666;
+  transition: all 100ms ease-in-out;
+}
+
+.drawer-menu-list > li > a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+
+.footerBottom {
+  background-color: #2a354b;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Pretendard-Regular';
+}
+
+.listLogo {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.adress {
+  color: #fff;
+  font-size: 14px;
+  color: #ededed;
+}
+
+.adress p:first-child {
+  margin-bottom: 8px;
+}

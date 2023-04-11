@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from "react";
 import { useSpring, animated } from 'react-spring'
 import $ from 'jquery';
+import './MainBanner.css'
 
 
 
@@ -25,6 +26,7 @@ const MainBanner = () => {
       setAirQuality(data.response.body.items[11].pm10Value);
       setAirQuality2(data.response.body.items[11].pm25Value);
     };
+
 
     const fetchWeather = async () => {
       const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=36.3617&lon=127.3868&appid=f97e7ef1034e0c950eb56df741876340&units=metric");

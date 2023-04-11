@@ -1,16 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
 import Index from './index/Index'
-import $ from 'jquery';
-import { animated } from '@react-spring/web'
+import { BrowserRouter, Routes ,Route } from 'react-router-dom'
+import Mainpage from './Main/Mainpage';
+
 
 
 function App() {
   return (
-    <div className="App">
-      <Index />
-    </div>
-  );
+<BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Index />}/>
+      <Route path="/MainPage" element={<Mainpage />}/>
+    </Routes>
+</BrowserRouter>
+  )
 }
 
 export default App;
