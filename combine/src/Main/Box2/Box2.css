@@ -10,7 +10,7 @@ li {
 
 .Box2-wrapper {
     padding: 150px 0;
-    font-family: 'Pretendard-Regular';
+    font-family: 'Pretendard-Medium';
 }
 
 .Box2-bgImg {
@@ -21,9 +21,19 @@ li {
     height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('/public/img/대전야경3.png');
+    background-image: url('/src/assets/img/대전야경3.png');
     margin: 0 auto;
     position: relative;
+    animation: night-daejeon 3s;
+}
+
+@keyframes night-daejeon {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .Box2-text-wrapper {
@@ -38,6 +48,7 @@ li {
     font-size: 45px;
     font-weight: 700;
     letter-spacing: 3px;
+    font-family: 'Pretendard-Bold';
 }
 
 .daejeon-target {
@@ -66,7 +77,6 @@ li {
 .Box2-text-list-2 {
     font-size: 20px;
     margin-bottom: 10px;
-    letter-spacing: 1px;
 }
 
 .Box2-text-list-2 p:last-child {
@@ -100,8 +110,8 @@ li {
 }
 
 .mayor-box {
-    width: 200px;
-    height: 120px;
+    width: 280px;
+    height: 150px;
     background-color: #fff;
     cursor: pointer;
     position: relative;
@@ -152,7 +162,7 @@ li {
 
 .mayor-list p {
     color: #666;
-    font-size: 14px;
+    font-size: 16px;
     position: absolute;
     top: 20%;
     left: 15%;

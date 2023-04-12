@@ -12,30 +12,13 @@ a {
   text-decoration: none;
 }
 
-@font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: '안단테';
-  src: url('../public/fonts/안단테.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'AnyConv';
-  src: url('../public/fonts/AnyConv.com__andante.woff') format('woff');
-}
-
 /* ----------------------------------- */
 /* MainBanner */
 
 .global-header {
   width: 100%;
   height: 100vh;
-  background-image: url(./MainBanner/expro-bridge-night-daejeon-korea.jpg);
+  background-image: url('./expro-bridge-night-daejeon-korea.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -446,14 +429,14 @@ a {
 }
 
 .swiper-button-next {
-  background: url(../public/icon/blue-btn-right.png) no-repeat;
+  background: url('./blue-btn-right.png') no-repeat;
   background-size: 20px;
   background-position: center;
   margin-right: 300px;
 }
 
 .swiper-button-prev {
-  background: url(../public/icon/blue-btn-left.png) no-repeat;
+  background: url('./blue-btn-start.png') no-repeat;
   background-size: 20px;
   background-position: center;
   margin-left: 300px;

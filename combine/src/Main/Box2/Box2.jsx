@@ -1,18 +1,10 @@
 import React from 'react'
 import './Box2.css'
-import mayorArrow from '../Box2/mayorBox/mayor-arrow.png'
-import mayor1 from '../Box2/mayorBox/mayor-1.png'
-import mayor2 from '../Box2/mayorBox/mayor-2.png'
-import mayor3 from '../Box2/mayorBox/mayor-3.png'
 
 
 const mayorTitle = ["대전시장 이장우", "이장우의 공약사업", "소통하는 이장우"];
-const mayorNext = [mayorArrow, mayorArrow, mayorArrow];
-const mayorIcon = [mayor1, mayor2, mayor3];
-
 const titleList = mayorTitle.map((title, index) => <p key={index}>{title}</p>);
-const nextList = mayorNext.map((btn, b) => <div key={b}><img src={btn} alt="arrow" /></div>);
-const IconList = mayorIcon.map((icon, i) => <div key={i}><img src={icon} alt="icon" /></div>);
+
 
 
 const Box2 = () => {
@@ -42,7 +34,7 @@ const Box2 = () => {
 
 
                   <div className='mayor-img-box'>
-                    <img style={{width:500}} src="/img/이장우2.png" alt="대전시장" />
+                    <img style={{width:500}} src='/mayorBox/이장우2.png' alt="대전시장" />
                   </div>
 
                   <div className='mayotBox-bigwrapper'>
@@ -51,10 +43,10 @@ const Box2 = () => {
                               <div className="mayor-list">
                                   <p>{mayorTitle[0]}</p>
                                   <div className='mayor-arrow'>
-                                      <img style={{ width: 35 }} src={mayorNext[0]} alt="arrow" />
+                                      <img style={{ width: 40 }} src='/mayorBox/mayor-arrow.png' alt="arrow" />
                                   </div>
                                   <div className='mayor-titleimg'>
-                                      <img style={{ width: 50 }} src={mayorIcon[0]} alt="icon" />
+                                      <img style={{ width: 70 }} src='/mayorBox/mayor-1.png' alt="icon" />
                                   </div>
                               </div>
                           </div>
@@ -65,10 +57,10 @@ const Box2 = () => {
                               <div className="mayor-list">
                                   <p>{mayorTitle[1]}</p>
                                   <div className='mayor-arrow'>
-                                      <img style={{ width: 35 }} src={mayorNext[1]} alt="arrow" />
+                                      <img style={{ width: 40 }} src='/mayorBox/mayor-arrow.png' alt="arrow" />
                                   </div>
                                   <div className='mayor-titleimg'>
-                                      <img style={{ width: 50 }} src={mayorIcon[1]} alt="icon" />
+                                      <img style={{ width: 70 }} src='/mayorBox/mayor-2.png' alt="icon" />
                                   </div>
                               </div>
                           </div>
@@ -78,10 +70,10 @@ const Box2 = () => {
                               <div className="mayor-list">
                                   <p>{mayorTitle[2]}</p>
                                   <div className='mayor-arrow'>
-                                      <img style={{ width: 35 }} src={mayorNext[2]} alt="arrow" />
+                                      <img style={{ width: 40 }} src='/mayorBox/mayor-arrow.png' alt="arrow" />
                                   </div>
                                   <div className='mayor-titleimg'>
-                                      <img style={{ width: 50 }} src={mayorIcon[2]} alt="icon" />
+                                      <img style={{ width: 70 }} src='/mayorBox/mayor-3.png' alt="icon" />
                                   </div>
                               </div>
                           </div>

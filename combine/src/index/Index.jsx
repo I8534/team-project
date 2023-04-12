@@ -20,7 +20,7 @@ const Index = () => {
 
                      <Link to="/Mainpage">    
                         <div className="index-Boxtem">
-                            <div className="index-bottom-imgbox"><img style={{ width: 150 }} src="./일류경제도시 슬로건-01.png" alt="" /></div>
+                            <div className="index-bottom-imgbox"><img style={{ width: 170 }} src='/img/일류경제도시 슬로건-01.png' alt="" /></div>
                             <h1 className='index-text-1'>대전시청</h1>
                             <p>대전시 대표포털</p>
                         </div>
@@ -29,7 +29,7 @@ const Index = () => {
                     </div>
                     <div className='index-BoxList'>
                         <div className="index-Boxtem">
-                            <div className="index-bottom-imgbox"><img style={{ width: 250 }} src="./위에서 보는 사람들-01.png" alt="" /></div>
+                            <div className="index-bottom-imgbox"><img style={{ width: 250 }} src='/img/위에서 보는 사람들-01.png' alt="" /></div>
                             <h1 className='index-text-2'>대전시 민원 게시판</h1>
                             <p>바로가기</p>
                         </div>
@@ -48,7 +48,7 @@ const Index = () => {
             </div>
 
             <div className='index-footer'>
-                <img style={{ width: 180 }} src="./대전 슬로건.png" alt="" />
+                <img style={{ width: 180 }} src='/img/대전 슬로건.png' alt="" />
                 <p className='index-footer-call'><span>민원상담콜센터 042-120</span> 평일 08:00~21:00  토·공휴일 09:00~18:00</p>
                 <p>(c) DAEJEON METROPOLITAN CITY. ALL RIGHTS RESERVED.</p>
             </div>
