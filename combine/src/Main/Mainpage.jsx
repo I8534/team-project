@@ -8,6 +8,7 @@ import Cctv from './Box5/Cctv'
 import MainFooter from './Footer/MainFooter'
 import $ from 'jquery';
 import { animated } from '@react-spring/web'
+import SwipeMenu3 from './SwipeMenu/SwipeMenu3'
 
 
 const Mainpage = () => {
@@ -15,6 +16,7 @@ const Mainpage = () => {
     <div>
       <MainBanner/>
       <Box1/>
+      <SwipeMenu3/>
       <Box2/>
       {/* <Box3/> */}
       <Gesifan/>

@@ -1,0 +1,99 @@
+.menubox {
+  padding: 15px 85px;
+  width: 850px;
+  height: 725px;
+  background-color: #e1f3ff;
+  z-index: 3px;
+  border-radius: 2.5%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(63, 65, 80, 0.7);
+  transition: display 300ms ease-in-out;
+  z-index: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.is-active {
+  display: none;
+}
+
+.text-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-title1 {
+  color: #004e8e;
+}
+
+.text-title2 {
+  color: red;
+}
+
+.img-box3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-box4 {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  margin: 15px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+  border: solid 2px #004e8e;
+  opacity: 0.45;
+}
+
+.img-box4:hover {
+  opacity: 1;
+}
+
+
+
+.close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  top: -20px;
+  right: -10px;
+}
+
+.service {
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+}
+
+.img-box4 input {
+ display: none;
+}
+
+.btn {
+  width: 125px;
+  height: 50px;
+  border: 0;
+  background-color: white;
+  border: 1px solid #004e8e;
+  border-radius: 50px;
+  margin: 0 15px;
+}
+
+.btn:hover {
+  background-color: #004e8e;
+}
