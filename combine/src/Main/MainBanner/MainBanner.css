@@ -171,7 +171,7 @@ a {
   position: absolute;
   top: 200px;
   left: 200px;
-  font-family: 'AnyConv';
+  font-family: '안단테';
   font-weight: 400;
   letter-spacing: 2px;
 }
@@ -221,6 +221,7 @@ a {
   height: 30px;
   overflow: hidden;
   margin-top: 20px;
+  font-family: 'Pretendard-Regular';
 }
 
 .tagBox {
@@ -328,7 +329,7 @@ a {
   bottom: 50px;
   right: 50px;
   padding: 40px;
-  font-family: 'Pretendard-Regular';
+  font-family: 'Pretendard-Medium';
 }
 
 .weatherBox {

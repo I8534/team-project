@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect , useState } from 'react';
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Route, Routes, useNavigate, Link } from 'react-router-dom';
 import './GesifanJunche.css'
 import videoTim from './당신이 마주할 대전, 당신에게 대전이란.mp4'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -120,7 +120,9 @@ const GesifanJunche = () => {
         </video>
         
         <div>
-            <img onClick={gohome} className='GesifanJunche-logo'  src="./icon/게시판 아이콘-07.png" alt="logo" />
+            <Link to="/Mainpage">    
+              <img className='GesifanJunche-logo'  src="./icon/게시판 아이콘-07.png" alt="logo" />
+            </Link>
             <div className='GesifanJunche-text'>
               <h2>소통으로 미래를 선도하는 대전</h2>
               <h2>시민들의 자유를 존중하는 대전</h2>

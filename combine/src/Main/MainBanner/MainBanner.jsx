@@ -3,8 +3,7 @@ import { useState, useEffect } from "react";
 import { useSpring, animated } from 'react-spring'
 import $ from 'jquery';
 import './MainBanner.css'
-
-
+import {  Route, Routes, useNavigate, Link } from 'react-router-dom'
 
 const MainBanner = () => {
 
@@ -58,51 +57,51 @@ const MainBanner = () => {
   let image_dust;
   let txt_dust;
   if (pm10 > 150) {
-    image_dust = "/weather/finedust-red.png";
+    image_dust = "/icon/finedust-red.png";
     txt_dust = "매우 나쁨"
   } else if (pm10 > 80) {
-    image_dust = "/weather/finedust-orange.png";
+    image_dust = "/icon/finedust-orange.png";
     txt_dust = "나쁨"
   } else if (pm10 > 30) {
-    image_dust = "/weather/finedust-green.png";
+    image_dust = "/icon/finedust-green.png";
     txt_dust = "보통"
   } else {
-    image_dust = "/weather/finedust-blue.png";
+    image_dust = "/icon/finedust-blue.png";
     txt_dust = "좋음"
   }
 
   let image_dust2;
   let txt_dust2;
   if (pm25 > 75) {
-    image_dust2 = "/weather/finedust-red.png";
+    image_dust2 = "/icon/finedust-red.png";
     txt_dust2 = "매우 나쁨"
   } else if (pm25 > 35) {
-    image_dust2 = "/weather/finedust-orange.png";
+    image_dust2 = "/icon/finedust-orange.png";
     txt_dust2 = "나쁨"
   } else if (pm25 > 15) {
-    image_dust2 = "/weather/finedust-green.png";
+    image_dust2 = "/icon/finedust-green.png";
     txt_dust2 = "보통"
   } else {
-    image_dust2 = "/weather/finedust-blue.png";
+    image_dust2 = "/icon/finedust-blue.png";
     txt_dust2 = "좋음"
   }
 
 
   let image_weath;
   if (weath == 'Clear') {
-    image_weath = "/weather/날씨 아이콘-맑음.png";
+    image_weath = "/icon/날씨 아이콘-맑음.png";
   } else if (weath == 'Clouds') {
-    image_weath = "/weather/날씨 아이콘-구름.png";
+    image_weath = "/icon/날씨 아이콘-구름.png";
   } else if (weath == 'Snow') {
-    image_weath = "/weather/날씨 아이콘-눈.png";
+    image_weath = "/icon/날씨 아이콘-눈.png";
   } else if (weath == 'Rain') {
-    image_weath = "/weather/날씨 아이콘-비.png";
+    image_weath = "/icon/날씨 아이콘-비.png";
   } else if (weath == 'Thunderstorm') {
-    image_weath = "/weather/날씨 아이콘-번개.png";
+    image_weath = "/icon/날씨 아이콘-번개.png";
   } else if (weath == 'Drizzle') {
-    image_weath = "/weather/날씨 아이콘-이슬비.png";
+    image_weath = "/icon/날씨 아이콘-이슬비.png";
   } else {
-    image_weath = "/weather/날씨 아이콘-맑음.png";
+    image_weath = "/icon/날씨 아이콘-맑음.png";
   }
 
   let weath_condition;
@@ -145,7 +144,7 @@ const MainBanner = () => {
 
           <div className='logo'>
             <a href="/">
-              <img style={{ width: 70 }} className='logoImg' src="/assets/logo.png" alt="대전로고" />
+              <img style={{ width: 70 }} className='logoImg' src="/img/logo.png" alt="대전로고" />
             </a>
           </div>
 
@@ -256,8 +255,12 @@ const MainBanner = () => {
           </nav>
 
           <ul className="btn-box">
+            <Link to='/Login'>
             <li className='login' type='button'>로그인</li>
+            </Link>
+            <Link to='/Register'>
             <li className='join' type='button'>회원가입</li>
+            </Link>
           </ul>
         </div>
 
@@ -280,7 +283,7 @@ const MainBanner = () => {
                 <input name="q" type="text" />
               </form>
             </div>
-            <img className='searchImg' src='./icon/search-icon.png' alt='검색'></img>
+            <img className='searchImg' src='/icon/search-icon.png' alt='검색'></img>
 
             <div className="tagWrapper">
               <div className='tagBox'>
